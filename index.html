@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+      }
+    .main{
+        width: 100%;
+        background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(tree.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 109vh;
+    }
+    .navbar{
+        width: 1200px;
+        height: 75px;
+        margin: auto;
+    }
+    .icon{
+
+        width: 200px;
+        float: left;
+        height: 70px;
+    }  
+    .logo{
+        color: orange;
+        font-size: 45px;
+        padding-left: 20px;
+        padding-top: 30px;
+        float: left;
+    }
+    .menu{
+        width:400px;
+        float: left;
+        height: 70px;
+    }
+    ul{
+        float:left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    ul li{
+        list-style: none;
+        margin-left: 62px;
+        margin-top: 27px;
+        font-size: 14px;
+    }
+    ul li a{
+        text-decoration: none;
+        color: white;
+        font-family: Arail;
+        font-weight:bold;
+        transition: 0.4s;
+    }
+    ul li a:hover{
+        color:orange;
+        font-size: 0.9rem;
+
+    }
+    .search{
+        width: 330px;
+        float: left;
+        margin-left: 270px;
+    }
+    .srch{
+        font-family:'Times New Roman';
+        width:200px;
+        height:40px;
+        background: rgb(51, 45, 56);
+        border:1px;
+        margin-top: 13px;
+        color: black;
+        border-right: none;
+        font-size: 16px;
+        float: left;
+        padding: 10px;
+        border-bottom-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+    .btn{
+        width: 100px;
+        height: 40px;
+        background: rgb(216, 93, 11);
+        border: 2px solid rgb(255, 149, 0);
+        margin-top: 13px;
+        color:black;
+        font-size: 15px;
+        border-bottom-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+    .btn:hover{
+         background-color: white;
+    }
+
+    .btn:focus{
+        outline: none;
+    }
+    .btn:focus{
+        outline: none;
+    }
+    .content{
+        width: 1100px;
+        height: auto;
+        margin: auto;
+        color: white;
+        position: relative;
+
+    }
+    .content .par{
+        padding-left: 20px;
+        padding-bottom: 25px;
+        letter-spacing: 1.2px;
+        line-height: 25px;
+    }
+    .content h1{
+
+        font-size: 50px;
+        padding-left: 20px;
+        margin-top: 10%;
+        letter-spacing:3px;
+    }
+    .content .bt{
+       width: 140px;
+       height: 40px;
+       background: rgb(238, 119, 15);
+       border: 1px;
+       border-color: blue;
+       margin-bottom: 10px;
+       margin-left: 20px;
+       font-size: 18px;
+       border-radius: 10px;
+       cursor: pointer;
+    }
+    .content .bt a{
+        text-decoration: none;
+        color:black;
+        transition: .3s ease;
+    }
+    .bt:hover{
+        background-color: white;
+    }
+    .content span{
+        color:rgb(255, 77, 0);
+        font-size: 60px;
+    }
+    .form{
+        width: 250px;
+        height: 380px;
+        background: linear-gradient(to top,rgb(0, 0,0,0.8)50%,rgb(0, 0,0,0.8)50%);
+        position : absolute;
+        top: -20px;
+        left:870px;
+        border-radius: 10px;
+        padding: 25px;
+    }
+    .form h2{
+        width: 220px;
+        text-align: center;
+        font-family: sans-serif;
+        color:rgb(255, 149, 0);
+        font-size: 22px;
+        background-color:white;
+        border-radius: 10px;
+        margin:2px;
+        padding: 8px;
+    }
+    .form input{
+        width: 240px;
+        height: 35px;
+        background: transparent;
+        border-bottom: 1px solid orange;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        color: white;
+        font-size: 15px;
+        letter-spacing: 1px;
+        margin-top: 30px;
+        font-family: sans-serif;
+    }
+    
+    .form input:focus{
+        outline:none;
+    } 
+    ::placeholder{
+        color:white;
+    }
+    .btn3{
+        width: 240px;
+        height: 40px;
+        background: rgb(230, 110, 11);
+        border: none;
+        margin-top: 30px;
+        font-size: 18px;
+        border-radius: 10px;
+        cursor: pointer;
+        color: white;
+    }
+    .btn3:hover{
+        background: white;
+        color:orange;
+    }
+    .btn3 a{
+        text-decoration: none;
+        color: black;
+        font-weight:bold;
+    }
+    .form .link{
+        font-size: 17px;
+        padding-top: 20px;
+        text-align: center;
+    }
+    .form .link a{
+        text-decoration: none;
+        color: orange;
+    }
+    .lov{
+        padding-top: 15px;
+        padding-bottom: 10px;
+        text-align: center;
+
+    }
+    .icon a{
+        text-decoration: none;
+        color: white;
+    }
+    .icon ion-icon{
+        color:white;
+        font-size: 22px;
+        padding-left: 14px;
+        padding-top: 5px;
+        transition: 0, 3s eas;
+    }
+    .icon ion-icon:hover{
+        color: orange;
+
+    }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h1 class="logo">VaaRunn</h1>
+            </div>
+            <div class="menu">
+                <ul>
+                   <li><a href="https://www.coursera.org/courses?query=web%20development">HOME</a></li>
+                   <li><a href="https://www.codecademy.com/resources/blog/what-is-web-development/"> ABOUT </a></li>
+                   <li><a href="https://www.hostinger.in/tutorials/web-development-company"> SERVICES</a></li>
+                   <li><a href="https://www.strikingly.com/?utm_source=bing-sem&utm_medium=cpc&utm_campaign=v4-s-in
+                    -computers-bing-hi-website-en&utm_content=v4-s-in-computers-bing-hi-website-en&utm_term
+                    =web%20design&msclkid=0baff0efd5551d30b9a7957647fc240c"> DESIGN </a></li>
+                   <li><a href="https://blog.hubspot.com/service/best-contact-us-pages"> CONTECT </a></li>
+                </ul>
+            </div>
+
+            <div class="search">
+                <input class="srch" type="search" name="" placeholder="Type to text">
+                <a href="https://in.best-jobs-online.com/serp/2/?position=Web+Develop
+                er&locphysical=1676&qrn_source=google&qrn_medium=cpc&qrn_campaign=439
+                154329&msclkid=2bd0f76f95fe1b87b7c792f6030296e1&utm_source=bing&utm_me
+                dium=cpc&utm_campaign=IN%7CPositionKWs&utm_term=Web%20Developer%20jobs
+                &utm_content=Web%20Developerhttps://erp.kgikanpur.com/"><button class="btn">Search</button></a>
+            </div>
+        </div>
+        <div class="content">
+            <h1> Web Design & <br> <span> Devlopment </span><br> Course </h1>
+            <p class="par"> Loren ipsum dincidentolor sit varun conteturer adpipisicing elit,
+                Libero unde <br>omsis ullin elin vdfhsu . A better college can get 
+                 you a interview call but to<br> survive an interview you need skill. </p>
+            <button class ="bt"><a href="#">JOIN US</a></button>
+
+            <div class="form">
+                <h2>Login Here</h2>
+                <input type="email" name="email" placeholder="Enter Email Here">
+                <input type="password" name="password" placeholder="Enter Password Here">
+                <button class="btn3"><a href="https://erp.aktu.ac.in/webpages/oneview/oneview.aspx">Login</a></button>
+
+                <p class="link">Dont have an account<br>
+                <a href="https://erp.kgikanpur.com/">Sign up</a> here </p>
+                <p class="lov">Log in with</p>
+               
+                <div class="icon">
+                    <a href="https://www.facebook.com/login.php/"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="https://www.instagram.com/accounts/login/?next=https%3A%2F%2Faccountscenter
+                    .instagram.com%2F%3F__coig_login%3D1"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="https://twitter.com/login"><ion-icon name="logo-twitter"></ion-icon></a>
+                    <a href="https://accounts.google.com/v3/signin/identifier?ifkv=ASKXGp17LuoeNpgHBBimBzn
+                    f7cIRKathrpLFmpb3Fz6OT0_5sZLWNyVyMlN416cMDm368EqrCM1E&flowName=GlifWebSignIn&flowEntry=
+                    ServiceLogin&dsh=S-1123548832%3A1704564003239152&theme=glif"><ion-icon name="logo-google"></ion-icon></a>
+                    <a href="https://www.skype.com/en/get-skype/"><ion-icon name="logo-skype"></ion-icon></a>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>
